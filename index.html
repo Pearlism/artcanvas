@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanlue Art Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="canvas-container">
+        <!-- Art Canvas for Drawing -->
+        <canvas id="artCanvas"></canvas>
+        
+        <div class="controls">
+            <button id="eraseButton">Eraser</button>
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+            <input type="color" id="colorPicker" value="#ffffff">
+            <button id="clearButton">Clear Canvas</button>
+            <button id="saveButton">Save Image</button> <!-- Save Button -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-buttons">
+            <button id="backButton" onclick="location.href='index.html'">Go Back</button>
+            <p>Made by Landen for Vanlue Art</p>
+        </div>
+    </footer>
+
+    <script src="particles.js"></script> <!-- Ensure this is the correct path -->
+    <script src="canvas.js"></script>  <!-- Ensure this is the correct path -->
+</body>
+</html>
